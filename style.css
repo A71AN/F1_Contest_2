@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0px;
+    background-color: rgb(255, 226, 253);
+  }
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+  }
+  
+  .book-details {
+    margin-top: 100px;
+    margin-left: 30%;
+    background-color: rgb(231, 244, 255);
+    width: 600px;
+    padding: 20px;
+    border: 1px double black ;
+  }
+  .registration-form {
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 600px;
+    background-color: rgb(231, 244, 255);
+    padding: 20px;
+    border: 1px double black ;
+  }
+  
+  input:hover {
+    border-color: rgb(84, 84, 246);
+  }
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+  }
+  s {
+    scroll-behavior: smooth;
+  }
+  
+  a.a {
+    text-decoration: none;
+    color: white;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="date"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"] {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }

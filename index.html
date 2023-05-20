@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header>
+      <table class="navbar">
+        <tr>
+          <td><h1>Library System</h1></td>
+          <td>
+            <a class="a" href="#book"><b>Books</b></a>
+          </td>
+          <td>
+            <a class="a" href="#res"><b>Register</b></a>
+          </td>
+          <td><b>Contact Us</b></td>
+          <td><b>Layout</b></td>
+        </tr>
+      </table>
+    </header>
+
+    <!-- first section -->
+    <section class="book-details">
+      <h2 id="book">Books</h2>
+      <table
+        cellpadding="15px"
+        cellspacing="0"
+        border="1px"
+        class="table-of-details"
+      >
+        <h2></h2>
+        <tr>
+          <th>Book ID</th>
+          <th>Tittle</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Available</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <a href="#">Ikigai</a>
+            <table cellspacing="0" border="1px">
+              <tr>
+                <td>Publication Date:2016</td>
+              </tr>
+              <tr>
+                <td>Page count:208</td>
+              </tr>
+              <tr>
+                <td>ISBN:0143130722</td>
+              </tr>
+            </table>
+          </td>
+          <td>Francesc Miralles and Hector Garcia</td>
+          <td>Self-Help</td>
+          <td>Availabe</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            <a href="#">Your Name</a>
+            <table cellspacing="0" border="1px">
+              <tr>
+                <td>Publication Date:2016</td>
+              </tr>
+              <tr>
+                <td>Page count:262</td>
+              </tr>
+              <tr>
+                <td>ISBN:9784041046593</td>
+              </tr>
+            </table>
+          </td>
+          <td>Makoto Shinkai</td>
+          <td>Light/Fantasy Fiction</td>
+          <td>Available</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>
+            <a href="#">The Alchemist</a>
+            <table cellspacing="0" border="1px">
+              <tr>
+                <td>Publication Date:1988</td>
+              </tr>
+              <tr>
+                <td>Page count:218</td>
+              </tr>
+              <tr>
+                <td>ISBN:9780694524440</td>
+              </tr>
+            </table>
+          </td>
+          <td>Paulo Coelho</td>
+          <td>Drama/Quest</td>
+          <td>Available</td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>
+              <a href="#">Wings of Fire</a>
+              <table cellspacing="0" border="1px">
+                <tr>
+                  <td>Publication Date:1999</td>
+                </tr>
+                <tr>
+                  <td>Page count:180</td>
+                </tr>
+                <tr>
+                  <td>ISBN:9788173711466</td>
+                </tr>
+              </table>
+            </td>
+            <td>A.P.J. Abdul Kalam and Arun Tiwari</td>
+            <td>Autobiography</td>
+            <td>Available</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>
+              <a href="#">Rich Dad Poor Dad</a>
+              <table cellspacing="0" border="1px">
+                <tr>
+                  <td>Publication Date:1997</td>
+                </tr>
+                <tr>
+                  <td>Page count:336 or 227</td>
+                </tr>
+                <tr>
+                  <td>ISBN:0446677450</td>
+                </tr>
+              </table>
+            </td>
+            <td>Robert Kiyosaki and Sharon Lechter</td>
+            <td>Personal Finance</td>
+            <td>Available</td>
+          </tr>
+      </table>
+    </section>
+
+    <!-- second section to fill the registration form -->
+    <section class="registration-form" id="res">
+      <form method="post">
+        <h2 id="res">Register</h2>
+        <label for="fname"><b>First Name:</b></label>
+        <br />
+        <input type="text" id="fname" name="fname" required />
+
+        <br />
+
+        <label for="lname"><b>Last Name:</b></label>
+        <br />
+        <input type="text" id="lname" name="lname" required />
+
+        <br />
+
+        <label for="dob"><b>Date Of Birth:</b></label>
+        <br />
+        <input type="date" id="dob" name="dob" required />
+
+        <br />
+
+        <label for="age"><b>Age</b></label>
+        <br />
+        <input type="number" id="age" name="age" min="5" max="100" />
+
+        <br />
+
+        <label for="email"><b>Email:</b></label>
+        <br />
+        <input type="email" id="email" required />
+
+        <br />
+
+        <label for="password"><b>Password:</b></label>
+        <br />
+        <input type="password" id="password" pattern=".{6,}" required />
+
+        <br />
+
+        <label for="confirm-password"><b>Confirm Password:</b></label>
+        <br />
+        <input type="password" id="confirm-password" pattern=".{6,}" required />
+
+        <br />
+
+        <input id="register-btn" type="submit" value="Register" />
+
+        <br />
+      </form>
+    </section>
+  </body>
+</html>
